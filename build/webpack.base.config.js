@@ -43,13 +43,14 @@ module.exports = {
             loader: 'file-loader',
             options: {
                 name: '[name].[ext]',
-                outputPath: `../fonts`
+                outputPath: `/${PATHS.assets}/fonts`
             }
         }, {
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
             options: {
-                name: '[name].[ext]'
+                name: '[name].[ext]',
+                outputPath: `/${PATHS.assets}/img`
             }
         }, {
             test: /\.css$/,
