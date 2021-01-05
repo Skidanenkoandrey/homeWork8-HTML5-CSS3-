@@ -67,8 +67,11 @@ body {
   color: $secondary-text-color;
   cursor: pointer;
 
+  &:hover {
+  }
+
   &-continue,
-  &-course{
+  &-course {
     margin-right: 15px;
   }
 }
@@ -198,6 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  height: 100%;
 
   &_left {
     max-width: 620px;
@@ -330,11 +334,54 @@ body {
   display: flex;
   flex-direction: column;
 
+  &-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 20px;
     font-family: $caption-font;
     font-size: $font-l;
     font-weight: normal;
   }
-}
 
+  &-category {
+    display: flex;
+    position: relative;
+
+    &__button {
+      display: none;
+    }
+
+    &__title {
+      font-family: $caption-font;
+      font-size: $font-m;
+      color: rgba($primary-text-color, .3);
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    & :checked + &__title {
+      color: $primary-text-color;
+    }
+
+    & :checked ~ .courses-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
