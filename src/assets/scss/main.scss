@@ -2,6 +2,7 @@ $primary-text-color: #000;
 $secondary-text-color: #fff;
 $caption-font: "Baloo Bhai";
 $black-background: #000;
+$white-background: #fff;
 $light-gray-background: #F5F5F7;
 $transparent-text: rgba(0, 0, 0, .3);
 $font-s: 13px;
@@ -9,6 +10,9 @@ $font-m: 16px;
 $font-l: 24px;
 $font-xl: 36px;
 $font-xxl: 64px;
+$button-border-radius: 8px;
+$item-bg-border-radius: 14px;
+
 
 * {
   margin: 0;
@@ -48,11 +52,25 @@ body {
   flex-direction: column;
   background: #fff;
   height: 100vh;
-  font-family: 'Baloo Bhai', 'Roboto', cursive, sans-serif;
+  font-family: 'Roboto', 'Baloo Bhai', cursive, sans-serif;
 }
 
 .button {
+  width: 120px;
+  height: 40px;
   border: 0;
+  background: $black-background;
+  border-radius: $button-border-radius;
+  font-size: $font-s;
+  font-weight: 700;
+  line-height: 15px;
+  color: $secondary-text-color;
+  cursor: pointer;
+
+  &-continue,
+  &-course{
+    margin-right: 15px;
+  }
 }
 
 .container {
@@ -193,7 +211,8 @@ body {
   padding: 40px 30px;
   background: $light-gray-background;
   width: 100%;
-  border-radius: 14px;
+  border-radius: $item-bg-border-radius;
+  margin-bottom: 20px;
 
   &__description {
     display: flex;
@@ -215,6 +234,107 @@ body {
 }
 
 
+/*SLIDER*/
 
+.slider {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 
+  &__item {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 96px;
+    width: 100%;
+
+    &__button {
+      width: 40px;
+      height: 40px;
+      background: none;
+      border-radius: 100%;
+      border: 2px solid $black-background;
+    }
+
+    &__arrow {
+      max-width: 100%;
+      height: auto;
+
+      &_forward {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $light-gray-background;
+  border-radius: $item-bg-border-radius;
+  padding: 8px;
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: $white-background;
+    border-radius: $item-bg-border-radius;
+  }
+
+  &__title {
+    font-family: $caption-font;
+    font-size: $font-m;
+    font-weight: normal;
+  }
+
+  &__author {
+    font-size: $font-s;
+  }
+
+  &__progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    background: url(./assets/img/percent-circle.svg);
+  }
+
+  &__percent {
+    font-size: $font-s;
+  }
+
+  &-time,
+  &-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+      margin-right: 8px;
+    }
+  }
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: $caption-font;
+    font-size: $font-l;
+    font-weight: normal;
+  }
+}
 

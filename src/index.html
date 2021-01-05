@@ -52,7 +52,7 @@
                 <img src="assets/img/greeting-Illustration.svg" alt="greeting man" class="personal-greeting__picture">
             </article>
             <section class="slider">
-                <section class="slider__item">
+                <div class="slider__item">
                     <article class="course">
                         <div class="course__img">
                             <img class="course__icon" src="assets/img/spanish-flag.svg" alt="spain flag">
@@ -64,15 +64,48 @@
                         <section class="course__progress">
                             <p class="course__percent">83%</p>
                         </section>
-                        <button class="button">Continue</button>
+                        <button class="button button-continue">Continue</button>
                     </article>
-                </section>
-
-                <div class="slider__control-button">
-                    <button class="button"></button>
-                    <button class="button"></button>
                 </div>
-
+                <div class="slider__control slider-control">
+                    <button class="button slider-control__button slider-control__button_previous">
+                        <img src="assets/img/slider-arrow-course.svg" alt="arrow previous"
+                             class="slider-control__arrow">
+                    </button>
+                    <button class="button slider-control__button slider-control__button_forward">
+                        <img src="assets/img/slider-arrow-course.svg" alt="arrow forward"
+                             class="slider-control__arrow slider-control__arrow_forward">
+                    </button>
+                </div>
+            </section>
+            <section class="courses">
+                <h2 class="courses__title">Courses</h2>
+                <div class="courses-category">
+                    <div class="courses-category__item">
+                        <input type="radio" id="all-courses" name="courses-category" checked>
+                        <label for="all-courses" class="tab-title">All Courses</label>
+                        <section class="courses-list">
+                            <article class="course courses-list__item">
+                                <div class="course__img">
+                                    <img class="course__icon" src="assets/img/figma-icon.svg" alt="spain flag">
+                                </div>
+                                <section class="course__description">
+                                    <h3 class="course__title">Learn Figma</h3>
+                                    <p class="course__author">by Christopher Morgan</p>
+                                </section>
+                                <section class="course__time course-time">
+                                    <img src="assets/img/time.svg" alt="icon time" class="course-time__icon">
+                                    <span class="course-time__duration">6h 30min</span>
+                                </section>
+                                <section class="course__rate course-rate">
+                                    <img src="assets/img/rate.svg" alt="icon rate" class="course-rate__icon">
+                                    <span class="course-rate__score">4,9</span>
+                                </section>
+                                <button class="button button-course">View course</button>
+                            </article>
+                        </section>
+                    </div>
+                </div>
             </section>
         </section>
         <section class="column column_right">
