@@ -11,7 +11,7 @@
 <div class="page container">
     <aside class="sidebar">
         <a href="#" class="logo">
-        <img src="assets/img/logo-icon.svg" alt="Logo" class="logo__img">
+            <img src="assets/img/logo-icon.svg" alt="Logo" class="logo__img">
         </a>
         <ul class="sidebar__menu sidebar-menu">
             <li class="sidebar-menu__item">
@@ -45,12 +45,10 @@
         </button>
     </aside>
     <main class="personal-page">
-        <section class="column column_left">
+        <div class="column column_left">
             <article class="personal-page__greeting personal-greeting">
-                <div class="personal-greeting__description">
-                    <h1 class="personal-greeting__title">Hello Josh!</h1>
-                    <p class="personal-greeting__text">It’s good to see you again.</p>
-                </div>
+                <h1 class="personal-greeting__title">Hello Josh!</h1>
+                <p class="personal-greeting__text">It’s good to see you again.</p>
                 <img src="assets/img/greeting-Illustration.svg" alt="greeting man" class="personal-greeting__picture">
             </article>
             <section class="slider">
@@ -346,10 +344,57 @@
 
                 </div>
             </section>
-        </section>
-        <section class="column column_right">
-
-        </section>
+        </div>
+        <div class="column column_right">
+            <nav class="navigation">
+                <input type="search" class="search" placeholder="Search" spellcheck>
+                <button class="button button-notification">
+                    <img src="assets/img/notification.svg" alt="notification bell" class="button-notification__icon">
+                </button>
+                <div class="navigation-dropdown">
+                    <div class="button navigation-dropdown__button">
+                        <img src="assets/img/avatar-icon.png" alt="" class="navigation-dropdown__avatar">
+                        <img src="assets/img/chevron.svg" alt="" class="navigation-dropdown__chevron">
+                    </div>
+                </div>
+            </nav>
+            <div class="statistic-course">
+                <div class="statistic-course__item">
+                    <span class="statistic-course__number">11</span>
+                    <p class="statistic-course__description">Courses completed</p>
+                </div>
+                <div class="statistic-course__item">
+                    <span class="statistic-course__number">4</span>
+                    <p class="statistic-course__description">Courses in&nbsp;progress</p>
+                </div>
+            </div>
+            <section class="statistic-graph">
+                <h2 class="statistic-graph__title">Your statistics</h2>
+                <div class="row">
+                    <div class="column column_hours">
+                        <h3 class="statistic-graph__subtitle">Learning Hours</h3>
+                    </div>
+                    <div class="column column_courses">
+                        <h3 class="statistic-graph__subtitle">My Courses</h3>
+                    </div>
+                    <div class="column column_time">
+                        <form action="#">
+                            <select class="during" name="" id="">
+                                <option value="">Weekly</option>
+                                <option value="">Monthly</option>
+                                <option value="">Annually</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <img src="assets/img/graph.svg" alt="" class="statistic-graph__img">
+            </section>
+            <article class="offer">
+                <h2 class="offer__title">Lern even more!</h2>
+                <p class="offer__description">Unlock premium features only for $9.99 per month.</p>
+                <button class="button button_offer">Go Premium</button>
+            </article>
+        </div>
     </main>
 </div>
 </body>

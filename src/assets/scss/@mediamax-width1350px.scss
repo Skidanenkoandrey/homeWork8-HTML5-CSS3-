@@ -1,0 +1,16 @@
+@media screen and (max-width: 1380px) {
+  .page {
+    grid-template-areas: "aside" "main";
+    grid-template-columns: auto;
+  }
+  .sidebar {
+    grid-template-rows: 100px;
+    grid-template-columns: 100px calc(100% - (200px + 40px)) 100px;
+    align-items: center;
+    gap: 20px;
+    &-menu {
+      grid-template-columns: repeat(5, minmax(30px, auto));
+    }
+  }
+
+}
