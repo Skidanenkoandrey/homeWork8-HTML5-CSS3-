@@ -57,7 +57,8 @@ body {
 }
 
 .button {
-  width: 120px;
+  max-width: 120px;
+  width: 31%;
   height: 40px;
   border: 0;
   background: $black-background;
@@ -211,14 +212,13 @@ body {
 
   &_left {
     max-width: 620px;
-    width: 100%;
+    width: 54%;
   }
 
   &_right {
     max-width: 450px;
-    width: 100%;
+    width: 43%;
   }
-
 }
 
 
@@ -258,7 +258,7 @@ body {
 
   &__item {
     max-width: 500px;
-    width: 100%;
+    width: 80%;
   }
 
   &-control {
@@ -266,7 +266,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 96px;
-    width: 100%;
+    width: 18%;
 
     &__button {
       width: 40px;
@@ -308,7 +308,7 @@ body {
 
   &__description {
     max-width: 150px;
-    width: 100%;
+    width: 35%;
   }
 
   &__title {
@@ -324,7 +324,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 41px;
+    min-width: 41px;
     height: 41px;
     background: url('../../assets/img/percent-circle.svg');
   }
@@ -411,7 +411,7 @@ body {
 
 .search {
   max-width: 300px;
-  width: 100%;
+  width: 65%;
   height: 40px;
   background: url('../../assets/img/search-icon.svg') no-repeat 5%,
   $light-gray-background;
@@ -439,7 +439,7 @@ body {
 
 .button-notification {
   background: none;
-  width: auto;
+  width: 10%;
 
   &:hover {
     transform: scale(1);
@@ -456,7 +456,7 @@ body {
 }
 
 .navigation-dropdown {
-  width: auto;
+  width: max-content;
 
   &__button {
     display: flex;
@@ -487,7 +487,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 208px;
-    width: 100%;
+    width: 47%;
     background: $light-gray-background;
     border-radius: $item-bg-border-radius;
     padding: 17px 34px;
@@ -517,6 +517,10 @@ body {
     &:hover {
       color: $primary-text-color;
     }
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -581,5 +585,8 @@ body {
   }
 }
 
-@import "@mediamax-width1350px";
+@import "@mediamax-width1199px";
+@import "@media-max-width1023px";
+@import "@media-max-width767px";
+@import "@media-max-width480px";
 @import "keyframes";

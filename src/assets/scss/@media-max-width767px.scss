@@ -1,0 +1,69 @@
+@media screen and (max-width: 767px) {
+
+
+.sidebar {
+  grid-template-columns: 70px calc(100% - 180px) 70px;
+  &-menu {
+    gap: 20px;
+  }
+}
+
+  .offer {
+    background: $light-gray-background;
+  }
+
+  .personal-greeting__picture {
+    right: 5%;
+  }
+
+  .slider {
+    flex-direction: column;
+    &__item {
+      width: 100%;
+    }
+    &-control {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+
+  .courses {
+    &-category :checked ~ &-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-list {
+      &__item {
+        width: 45%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+        margin-bottom: 20px;
+
+        & > section,
+        & > div {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .course {
+    &-time,
+    &-tate,
+    &__description {
+      max-width: none;
+      width: auto;
+    }
+
+  }
+
+
+  .button-course {
+    margin: auto;
+    width: 100%;
+  }
+
+}

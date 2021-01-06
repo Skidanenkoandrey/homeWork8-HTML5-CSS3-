@@ -1,0 +1,46 @@
+@media screen and (max-width: 1023px) {
+  .personal-page {
+    flex-direction: column;
+  }
+
+  .column {
+    max-width: none;
+    width: 100%;
+    &_left {
+      order: 2;
+    }
+  }
+
+  .button-notification {
+    max-width: max-content;
+    margin: 0 15px 0 auto;
+  }
+
+  .statistic-course__item {
+    max-width: none;
+  }
+
+  .statistic-graph {
+    display: none;
+  }
+
+  .offer {
+    margin: 0 0 50px;
+    max-width: none;
+    &_title,
+    &__description {
+      max-width: none;
+    }
+  }
+
+
+  .slider {
+    &__item {
+      max-width: none;
+    }
+    &-control {
+      margin: auto;
+    }
+  }
+}
+

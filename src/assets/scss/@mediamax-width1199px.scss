@@ -1,7 +1,9 @@
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1199px) {
   .page {
     grid-template-areas: "aside" "main";
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto;
+    gap: 30px;
   }
   .sidebar {
     grid-template-rows: 100px;
